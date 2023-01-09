@@ -1,0 +1,359 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1036{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs32\lang12 QCM Javascript\line Jean-Philippe FUMIERE\par
+
+\pard\sa200\sl276\slmult1 Quelle est la syntaxe de base d\rquote une d\'e9claration de variable en JavaScript?\par
+\par
+\b0\i Voici la syntaxe de base d'une d\'e9claration de variable en JavaScript : let nomDeVariable = valeur; ou var nomDeVariable = valeur;.\b\i0\par
+\par
+Quelle est la diff\'e9rence entre let et var en JavaScript?\par
+\b0\i let est une instruction de d\'e9claration de variable introduite dans ECMAScript 6. Elle est similaire \'e0 var, mais elle a une port\'e9e de bloc (par exemple, entre accolades) au lieu de la port\'e9e de fonction. Cela signifie que la variable d\'e9clar\'e9e avec let n'est accessible que dans le bloc o\'f9 elle a \'e9t\'e9 d\'e9clar\'e9e. var, en revanche, a une port\'e9e de fonction et est accessible partout dans la fonction o\'f9 elle a \'e9t\'e9 d\'e9clar\'e9e.\par
+\b\i0\par
+Quelle est la diff\'e9rence entre null et undefined en JavaScript?\par
+\b0\i En JavaScript, null est un objet qui repr\'e9sente la valeur "aucune valeur". C'est un objet sp\'e9cial qui est utilis\'e9 pour repr\'e9senter l'absence de valeur. undefined, quant \'e0 lui, est une valeur primitive qui est utilis\'e9e pour indiquer qu'une variable a \'e9t\'e9 d\'e9clar\'e9e, mais qu'elle n'a pas encore \'e9t\'e9 initialis\'e9e ou qu'elle n'a pas de valeur.\par
+\b\i0\par
+Comment concat\'e9ner deux cha\'eenes de caract\'e8res en JavaScript?\par
+\b0\i Pour concat\'e9ner deux cha\'eenes de caract\'e8res en JavaScript, vous pouvez utiliser l'op\'e9rateur de concat\'e9nation (+) : let chaineConcatenee = chaine1 + chaine2;. Vous pouvez \'e9galement utiliser la m\'e9thode concat() de l'objet String : let chaineConcatenee = chaine1.concat(chaine2);.\par
+\b\i0\par
+Comment convertir une cha\'eene en entier en JavaScript?\par
+\b0\i Pour convertir une cha\'eene en entier en JavaScript, vous pouvez utiliser la fonction parseInt() : let entier = parseInt(chaine);. Si la cha\'eene ne peut pas \'eatre convertie en entier, parseInt() renverra NaN (Not a Number).\b\i0\par
+Comment cr\'e9er une fonction en JavaScript?\par
+\b0\i function nomDeFonction(parametres) \{\par
+  // instructions\par
+\}\par
+\b\i0\par
+Quelle est la diff\'e9rence entre une fonction d\'e9clarative et une fonction exprim\'e9e en JavaScript?\par
+\b0\i Une fonction d\'e9clarative est une fonction qui est d\'e9clar\'e9e au d\'e9but de la port\'e9e (g\'e9n\'e9ralement au niveau global ou au niveau de la fonction) avec le mot-cl\'e9 function. Une fonction exprim\'e9e, en revanche, est une fonction qui est cr\'e9\'e9e en assignant une fonction \'e0 une variable. Voici un exemple de fonction exprim\'e9e :\par
+Copy code\par
+let maFonction = function(parametres) \{\par
+  // instructions\par
+\}\par
+\b\i0\par
+Comment appeler une fonction en JavaScript?\par
+\b0\i Pour appeler une fonction en JavaScript, vous devez utiliser son nom suivi de parenth\'e8ses et \'e9ventuellement de arguments entre parenth\'e8ses : nomDeFonction(arguments);.\par
+\b\i0\par
+Comment passer des arguments \'e0 une fonction en JavaScript?\par
+\par
+\b0\i Pour passer des arguments \'e0 une fonction en JavaScript, vous devez les fournir entre parenth\'e8ses lors de l'appel de la fonction, s\'e9par\'e9s par des virgules s'il y en a plusieurs. Par exemple : maFonction(arg1, arg2, arg3);. Ces arguments seront alors disponibles \'e0 l'int\'e9rieur de la fonction sous forme de variables avec les noms sp\'e9cifi\'e9s dans la d\'e9claration de la fonction (par exemple, parametres dans l'exemple de code pr\'e9c\'e9dent).\b\i0\par
+\par
+Comment utiliser une boucle for en JavaScript?\par
+\par
+\b0\i Voici comment utiliser une boucle for en JavaScript :\par
+\par
+Copy code\par
+for (initialisation; condition; incrementation) \{\par
+  // instructions \'e0 ex\'e9cuter tant que la condition est vraie\par
+\}\par
+La boucle for commence par l'initialisation de la boucle (par exemple, la d\'e9claration et l'initialisation d'une variable de boucle). Ensuite, la condition est v\'e9rifi\'e9e. Si elle est vraie, les instructions de la boucle sont ex\'e9cut\'e9es. Enfin, l'incrementation (ou d\'e9crementation) est effectu\'e9e et la boucle revient au d\'e9but en v\'e9rifiant \'e0 nouveau la condition. Si la condition est toujours vraie, les instructions sont \'e0 nouveau ex\'e9cut\'e9es, et ainsi de suite. Si la condition devient fausse, la boucle s'arr\'eate.\b\i0\par
+\b0\i Voici un exemple de boucle for qui affiche les nombres de 1 \'e0 10 :\par
+Copy code\par
+for (let i = 1; i <= 10; i++) \{\par
+  console.log(i);\par
+\}\par
+\b\i0 Comment utiliser une boucle while en JavaScript?\par
+\b0\i Voici comment utiliser une boucle while en JavaScript :\par
+\par
+Copy code\par
+while (condition) \{\par
+  // instructions \'e0 ex\'e9cuter tant que la condition est vraie\par
+\}\par
+La boucle while v\'e9rifie d'abord la condition. Si elle est vraie, les instructions de la boucle sont ex\'e9cut\'e9es. Ensuite, la condition est \'e0 nouveau v\'e9rifi\'e9e, et ainsi de suite jusqu'\'e0 ce qu'elle devienne fausse. Si la condition est fausse au d\'e9part, les instructions de la boucle ne sont pas ex\'e9cut\'e9es du tout.\par
+\b\i0\par
+Comment utiliser une boucle do...while en JavaScript?\par
+\b0\i Pour utiliser une boucle do...while en JavaScript, vous pouvez \'e9crire quelque chose comme ceci :\par
+\par
+Copy code\par
+do \{\par
+  // code \'e0 ex\'e9cuter\par
+  // ...\par
+\} while (condition);\par
+La boucle do...while ex\'e9cute d'abord le code \'e0 l'int\'e9rieur des accolades \{\}, puis v\'e9rifie si la condition est vraie. Si la condition est vraie, la boucle est ex\'e9cut\'e9e de nouveau. Si la condition est fausse, la boucle s'arr\'eate.\par
+Il est important de noter que la boucle do...while sera au moins ex\'e9cut\'e9e une fois, m\'eame si la condition est fausse d\'e8s le d\'e9part. Cela la distingue de la boucle while, qui ne sera pas ex\'e9cut\'e9e du tout si la condition est fausse d\'e8s le d\'e9part.\par
+\b\i0\par
+Comment utiliser l\rquote instruction break dans une boucle en JavaScript?\par
+\b0\i L'instruction break permet de sortir d'une boucle en JavaScript avant que la condition de fin de boucle ne soit atteinte. Elle est souvent utilis\'e9e pour mettre fin \'e0 une boucle lorsque certaines conditions sont remplies.\par
+\par
+Voici comment utiliser break dans une boucle for :\par
+\par
+Copy code\par
+for (let i = 0; i < 10; i++) \{\par
+  if (i === 5) \{\par
+    break;\par
+  \}\par
+  console.log(i);\par
+\}\par
+Ce code affichera les nombres de 0 \'e0 4 dans la console, puis sortira de la boucle lorsque i sera \'e9gal \'e0 5. La boucle ne sera pas ex\'e9cut\'e9e pour les valeurs de i sup\'e9rieures \'e0 5.\par
+\b\i0\par
+Comment utiliser l\rquote instruction continue dans une boucle en JavaScript?\par
+\b0\i L'instruction continue en JavaScript permet de forcer l'interruption de l'it\'e9ration en cours d'une boucle et de passer \'e0 la prochaine it\'e9ration. Voici un exemple de boucle for qui utilise continue :\par
+\par
+Copy code\par
+for (let i = 0; i < 10; i++) \{\par
+  if (i === 5) \{\par
+    continue;\par
+  \}\par
+  console.log(i);\par
+\}\par
+Ce code affichera les nombres de 0 \'e0 4 et de 6 \'e0 9, car lorsque i vaut 5, l'instruction continue est ex\'e9cut\'e9e et l'it\'e9ration en cours est interrompue, passant directement \'e0 la prochaine it\'e9ration de la boucle.\par
+\par
+Vous pouvez \'e9galement utiliser continue avec une \'e9tiquette pour interrompre une it\'e9ration dans une boucle imbriqu\'e9e. Par exemple :\par
+\par
+Copy code\par
+outerLoop: for (let i = 0; i < 10; i++) \{\par
+  for (let j = 0; j < 10; j++) \{\par
+    if (j === 5) \{\par
+      continue outerLoop;\par
+    \}\par
+    console.log(i, j);\par
+  \}\par
+\}\par
+Dans ce cas, l'instruction continue outerLoop interrompra l'it\'e9ration en cours de la boucle outerLoop lorsque j vaut 5, passant directement \'e0 la prochaine it\'e9ration de outerLoop.\par
+\b\i0\par
+Quelle est la diff\'e9rence entre l\rquote op\'e9rateur == et l\rquote op\'e9rateur === en JavaScript ?\par
+\par
+\b0\i En JavaScript, l'op\'e9rateur == (\'e9gal \'e0) permet de v\'e9rifier si deux valeurs sont \'e9gales en effectuant une conversion de type si n\'e9cessaire. Par exemple :\par
+\par
+Copy code\par
+console.log(1 == '1'); // affiche true\par
+Dans ce cas, le nombre 1 et la cha\'eene de caract\'e8res '1' sont consid\'e9r\'e9s comme \'e9gaux, car JavaScript a converti la cha\'eene en nombre avant de faire la comparaison.\par
+\par
+L'op\'e9rateur === (strictement \'e9gal \'e0) est quant \'e0 lui plus strict et ne effectue pas de conversion de type. Il v\'e9rifie si deux valeurs sont \'e9gales en comparant leur type et leur valeur. Par exemple :\par
+\par
+Copy code\par
+console.log(1 === '1'); // affiche false\par
+Dans ce cas, le nombre 1 et la cha\'eene de caract\'e8res '1' ne sont pas consid\'e9r\'e9s comme \'e9gaux, car ils ont des types diff\'e9rents (un nombre et une cha\'eene de caract\'e8res).\par
+\par
+En g\'e9n\'e9ral, il est recommand\'e9 d'utiliser l'op\'e9rateur === lorsque vous faites des comparaisons en JavaScript, car il est plus strict et moins sujet aux erreurs. Cependant, il peut \'eatre utile d'utiliser l'op\'e9rateur == dans certains cas, comme lorsque vous voulez ignorer la diff\'e9rence entre null et undefined.\par
+\b\i0\par
+\par
+Comment utiliser un op\'e9rateur ternaire en JavaScript ?\par
+\b0\i La bonne fa\'e7on de l'utiliser c'est de l'utiliser pour ce qu'il est c'est \'e0 dire un op\'e9rateur et d'exploiter sa valeur de retour. Vous pouvez le faire dans une affectation. Vous en avez un exemple ci-dessous : si la condition est vraie alors la valeur 1 est affect\'e9e \'e0 x sinon c'est la valeur 0.\par
+\b\i0\par
+Comment cr\'e9er un tableau en JavaScript ?\par
+\b0\i D\'e9claration de base\par
+Un tableau est un objet Array. Pour d\'e9clarer un tableau, il faut utiliser l'instruction new :\par
+var tab=new Array();\par
+La variable tab a maintenant la structure d'un tableau. Elle poss\'e8de les propri\'e9t\'e9s et les m\'e9thodes des tableaux et est pr\'eate \'e0 recevoir le contenu du tableau.\par
+En JavaScript, comme dans la plupart des langages de programmation, le premier \'e9l\'e9ment du tableau commence \'e0 l'indice 0. C'est un peu g\'eanant, mais on s'habitue...\par
+Pour alimenter le tableau avec les jours de la semaine, on \'e9crit le code suivant :\par
+var tab=new Array();\par
+tab[0]="Lundi";\par
+tab[1]="Mardi";\par
+tab[2]="Mercredi";\par
+tab[3]="Jeudi";\par
+tab[4]="Vendredi";\par
+tab[5]="Samedi";\par
+tab[6]="Dimanche";\par
+var longueur=tab.length;\par
+\b\i0\par
+Comment acc\'e9der \'e0 un \'e9l\'e9ment d\rquote un tableau en JavaScript?\par
+\b0\i Acc\'e9der aux \'e9l\'e9ments d'un tableau\par
+let arr = ["le premier \'e9l\'e9ment", "le deuxi\'e8me \'e9l\'e9ment", "le dernier \'e9l\'e9ment"]; console. log(arr[0]); // affiche "le premier \'e9l\'e9ment" console. ...\par
+let ann\'e9es = [1950, 1960, 1970, 1980, 1990, 2000, 2010]; console. log(ann\'e9es. ...\par
+renderer. 3d.\par
+\b\i0\par
+Comment utiliser la m\'e9thode push pour ajouter un \'e9l\'e9ment \'e0 la fin d\rquote un tableau en JavaScript?\par
+\b0\i Pour ajouter une valeur \'e0 un tableau, il suffit de faire appel \'e0 la m\'e9thode push(). Cette m\'e9thode retourne la longueur du tableau une fois les nouvelles valeurs ajout\'e9es.\par
+\par
+var monTableau = [x, y, z];\par
+var longueur = monTableau.push(a);\par
+console.log(monTableau); //Cette commande affichera [x, y, z, a]\par
+console.log(longueur); //Cette commande affichera 4\par
+\b\i0\par
+Comment utiliser la m\'e9thode pop pour supprimer un \'e9l\'e9ment de la fin d\rquote un tableau en JavaScript?\par
+\b0\i La m\'e9thode pop() est une m\'e9thode de l'objet Array qui permet de supprimer le dernier \'e9l\'e9ment d'un tableau et de renvoyer cet \'e9l\'e9ment. Voici comment l'utiliser :\par
+\par
+Copy code\par
+let tableau = [1, 2, 3, 4, 5];\par
+\par
+let dernierElement = tableau.pop();\par
+\par
+console.log(dernierElement); // affiche 5\par
+console.log(tableau); // affiche [1, 2, 3, 4]\par
+Si vous voulez supprimer le premier \'e9l\'e9ment du tableau, vous pouvez utiliser la m\'e9thode shift(), qui fonctionne de la m\'eame mani\'e8re que pop(), mais en supprimant le premier \'e9l\'e9ment au lieu du dernier.\par
+\par
+Copy code\par
+let tableau = [1, 2, 3, 4, 5];\par
+\par
+let premierElement = tableau.shift();\par
+\par
+console.log(premierElement); // affiche 1\par
+console.log(tableau); // affiche [2, 3, 4, 5]\par
+\b\i0\par
+Comment utiliser la m\'e9thode shift pour supprimer un \'e9l\'e9ment du d\'e9but d\rquote un tableau en JavaScript?\par
+\b0\i La m\'e9thode shift() est une m\'e9thode de l'objet Array qui permet de supprimer le premier \'e9l\'e9ment d'un tableau et de renvoyer cet \'e9l\'e9ment. Voici comment l'utiliser :\par
+\par
+Copy code\par
+let tableau = [1, 2, 3, 4, 5];\par
+\par
+let premierElement = tableau.shift();\par
+\par
+console.log(premierElement); // affiche 1\par
+console.log(tableau); // affiche [2, 3, 4, 5]\par
+Si vous voulez supprimer le dernier \'e9l\'e9ment du tableau, vous pouvez utiliser la m\'e9thode pop(), qui fonctionne de la m\'eame mani\'e8re que shift(), mais en supprimant le dernier \'e9l\'e9ment au lieu du premier.\par
+\par
+Copy code\par
+let tableau = [1, 2, 3, 4, 5];\par
+\par
+let dernierElement = tableau.pop();\par
+\par
+console.log(dernierElement); // affiche 5\par
+console.log(tableau); // affiche [1, 2, 3, 4]\par
+\b\i0\par
+Comment utiliser la m\'e9thode unshift pour ajouter un \'e9l\'e9ment au d\'e9but d\rquote un tableau en JavaScript?\par
+\par
+\b0\i var langages = ["JavaScript", "HTML", "CSS"];\par
+langages. unshift("PHP");\par
+console. log(langages);\par
+langages. unshift("Java", "Python");\par
+console. log(langages);\par
+for(var i = 0; i < langages. length; i++)\{\par
+write("" + langages[i] + "");\par
+\b\i0\par
+Comment utiliser la m\'e9thode splice pour ajouter, supprimer ou remplacer des \'e9l\'e9ments d\rquote un tableau en JavaScript?\par
+\b0\i La m\'e9thode splice() est une m\'e9thode de l'objet Array qui permet d'ajouter, de supprimer ou de remplacer des \'e9l\'e9ments d'un tableau. Voici comment l'utiliser :\par
+\par
+Copy code\par
+let tableau = [1, 2, 3, 4, 5];\par
+\par
+// pour ajouter un \'e9l\'e9ment\par
+tableau.splice(2, 0, 'a', 'b');\par
+console.log(tableau); // affiche [1, 2, "a", "b", 3, 4, 5]\par
+\par
+// pour remplacer un \'e9l\'e9ment\par
+tableau.splice(2, 1, 'c');\par
+console.log(tableau); // affiche [1, 2, "c", "b", 3, 4, 5]\par
+\par
+// pour supprimer un \'e9l\'e9ment\par
+tableau.splice(2, 1);\par
+console.log(tableau); // affiche [1, 2, "b", 3, 4, 5]\par
+\par
+// pour remplacer plusieurs \'e9l\'e9ments\par
+tableau.splice(2, 3, 'd', 'e', 'f');\par
+console.log(tableau); // affiche [1, 2, "d", "e", "f"]\par
+La m\'e9thode splice() prend deux arguments obligatoires :\par
+\par
+l'index \'e0 partir duquel les \'e9l\'e9ments doivent \'eatre ajout\'e9s, supprim\'e9s ou remplac\'e9s\par
+le nombre d'\'e9l\'e9ments \'e0 supprimer (si vous voulez ajouter ou remplacer des \'e9l\'e9ments, mettez 0)\par
+Vous pouvez \'e9galement lui passer d'autres arguments optionnels, qui repr\'e9sentent les valeurs \'e0 ajouter ou \'e0 remplacer.\par
+\par
+La m\'e9thode splice() modifie le tableau original et renvoie un tableau contenant les \'e9l\'e9ments qui ont \'e9t\'e9 supprim\'e9s. Si vous ne supprimez aucun \'e9l\'e9ment, elle renvoie un tableau vide.\par
+\b\i0\par
+Comment utiliser la m\'e9thode slice pour copier un sous - tableau d\rquote un tableau en JavaScript?\par
+\b0\i Array.prototype.slice()\par
+La m\'e9thode slice() renvoie un objet tableau, contenant une copie superficielle (shallow copy) d'une portion du tableau d'origine, la portion est d\'e9finie par un indice de d\'e9but et un indice de fin (exclus). Le tableau original ne sera pas modifi\'e9.\par
+\b\i0\par
+Comment parcourir un tableau en JavaScript avec la m\'e9thode forEach ?\par
+\b0\i La m\'e9thode forEach() transmet une boucle de rappel (callback) \'e0 chaque \'e9l\'e9ments du tableau avec les param\'e8tres suivants:\par
+La valeur actuelle (obligatoire) - La valeur de l'\'e9l\'e9ment actuel du tableau.\par
+L'index (facultatif) - L'index de l'\'e9l\'e9ment actuel.\par
+Array (facultatif) - L'objet tableau d'origine des \'e9l\'e9ments concern\'e9s.\par
+\b\i0\par
+Comment utiliser la m\'e9thode map pour transformer chaque \'e9l\'e9ment d\rquote un tableau en JavaScript?\par
+\b0\i Array.prototype.map()\par
+La m\'e9thode map() cr\'e9e un nouveau tableau avec les r\'e9sultats de l'appel d'une fonction fournie sur chaque \'e9l\'e9ment du tableau appelant.\par
+\b\i0\par
+Comment utiliser la m\'e9thode filter pour filtrer les \'e9l\'e9ments d\rquote un tableau en JavaScript?\par
+\b0\i La m\'e9thode filter() est une m\'e9thode de l'objet Array qui permet de filtrer les \'e9l\'e9ments d'un tableau en fonction d'une condition donn\'e9e. Elle renvoie un nouveau tableau contenant uniquement les \'e9l\'e9ments qui satisfont cette condition.\par
+\par
+Voici comment l'utiliser :\par
+\par
+Copy code\par
+let tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\par
+\par
+let resultat = tableau.filter(function(element) \{\par
+  return element % 2 == 0;\par
+\});\par
+\par
+console.log(resultat); // affiche [2, 4, 6, 8, 10]\par
+La fonction de filtrage prend chaque \'e9l\'e9ment du tableau en argument et doit renvoyer true si l'\'e9l\'e9ment doit \'eatre inclus dans le nouveau tableau, ou false s'il doit \'eatre ignor\'e9. Dans l'exemple ci-dessus, la fonction v\'e9rifie si l'\'e9l\'e9ment est un nombre pair, et ne garde que les \'e9l\'e9ments qui le sont.\par
+\par
+Vous pouvez \'e9galement utiliser une fonction fl\'e9ch\'e9e au lieu d'une fonction traditionnelle :\par
+\par
+Copy code\par
+let resultat = tableau.filter(element => element % 2 == 0);\par
+Notez que la m\'e9thode filter() ne modifie pas le tableau original, elle renvoie un nouveau tableau. Si vous voulez modifier le tableau original, vous pouvez utiliser la m\'e9thode splice() :\par
+\par
+Copy code\par
+let i = 0;\par
+while (i < tableau.length) \{\par
+  if (tableau[i] % 2 != 0) \{\par
+    tableau.splice(i, 1);\par
+  \} else \{\par
+    i++;\par
+  \}\par
+\}\par
+\par
+console.log(tableau); // affiche [2, 4, 6, 8, 10]\par
+Cette boucle parcourt le tableau et supprime chaque \'e9l\'e9ment qui n'est pas un nombre pair en utilisant splice(). Le compteur i est incr\'e9ment\'e9 seulement si l'\'e9l\'e9ment est gard\'e9, afin de ne pas sauter un \'e9l\'e9ment lors de la suppression.\par
+\b\i0\par
+Comment utiliser la m\'e9thode reduce pour r\'e9duire un tableau en une valeur unique en JavaScript ?\par
+\b0\i Array.prototype.reduce()\par
+La m\'e9thode reduce() applique une fonction qui est un \'ab accumulateur \'bb et qui traite chaque valeur d'une liste (de la gauche vers la droite) afin de la r\'e9duire \'e0 une seule valeur.\par
+\b\i0\par
+Comment cr\'e9er un objet en JavaScript ?\par
+\b0\i Il existe plusieurs mani\'e8res de cr\'e9er un objet en JavaScript. Voici quelques exemples :\par
+\par
+En utilisant une syntaxe de litt\'e9ral d'objet :\par
+Copy code\par
+let objet = \{\par
+  propriete1: valeur1,\par
+  propriete2: valeur2,\par
+  ...\par
+\};\par
+Par exemple :\par
+\par
+Copy code\par
+let personne = \{\par
+  nom: 'Dupont',\par
+  prenom: 'Jean',\par
+  age: 30\par
+\};\par
+\par
+console.log(personne.nom); // affiche 'Dupont'\par
+console.log(personne.prenom); // affiche 'Jean'\par
+console.log(personne.age); // affiche 30\par
+En utilisant le constructeur Object() :\par
+Copy code\par
+let objet = new Object();\par
+objet.propriete1 = valeur1;\par
+objet.propriete2 = valeur2;\par
+...\par
+Par exemple :\par
+\par
+Copy code\par
+let personne = new Object();\par
+personne.nom = 'Dupont';\par
+personne.prenom = 'Jean';\par
+personne.age = 30;\par
+\par
+console.log(personne.nom); // affiche 'Dupont'\par
+console.log(personne.prenom); // affiche 'Jean'\par
+console.log(personne.age); // affiche 30\par
+\b\i0\par
+Comment acc\'e9der \'e0 une propri\'e9t\'e9 d\rquote un objet en JavaScript ?\par
+\b0\i Indexer les propri\'e9t\'e9s d'un objet\par
+Il est possible d'acc\'e9der \'e0 une propri\'e9t\'e9 via son nom et via son indice (ordinal). Si on d\'e9finit une propri\'e9t\'e9 gr\'e2ce \'e0 un nom, on acc\'e9dera toujours \'e0 la valeur via le nom. De m\'eame, si on d\'e9finit une propri\'e9t\'e9 gr\'e2ce \'e0 un indice, on y acc\'e8dera toujours via son indice.\par
+\par
+Cette restriction s'applique lorsqu'on cr\'e9e un objet et ses propri\'e9t\'e9s via un constructeur et lorsqu'on d\'e9clare les propri\'e9t\'e9s explicitement (par exemple avec maVoiture.couleur = "rouge"). Si on d\'e9finit une propri\'e9t\'e9 d'un objet avec maVoiture[5] = "25 kmh", on pourra faire r\'e9f\'e9rence \'e0 cette propri\'e9t\'e9 gr\'e2ce \'e0 maVoiture[5].\par
+\par
+Il existe une exception \'e0 cette r\'e8gle lorsqu'on manipule des objets "semblables \'e0 des tableaux" provenant d'API Web telles que l'objet forms. Pour ces objets semblables \'e0 des tableaux, on peut acc\'e9der \'e0 une propri\'e9t\'e9 de l'objet gr\'e2ce \'e0 son nom (si l'attribut name est utilis\'e9 sur l'\'e9l\'e9ment HTML) ou gr\'e2ce \'e0 son index selon l'ordre dans le document. Ainsi, si on souhaite cibler un \'e9l\'e9ment <form> du document poss\'e9dant un attribut name qui vaut monForm et que cet \'e9l\'e9ment est le deuxi\'e8me \'e9l\'e9ment du document, on pourra y acc\'e9der avec document.forms[1], document.forms["monForm"] ou encore avec document.forms.monForm.\par
+\par
+D\'e9finir des propri\'e9t\'e9s pour un type d'objet\par
+On peut ajouter une propri\'e9t\'e9 \'e0 un type pr\'e9c\'e9demment d\'e9fini en utilisant la propri\'e9t\'e9 prototype. Cela permettra de d\'e9finir une propri\'e9t\'e9 qui sera partag\'e9e par tous les objets d'un m\'eame type plut\'f4t qu'elle ne soit d\'e9finie que pour un seul objet. Le code suivant permet d'ajouter une propri\'e9t\'e9 couleur \'e0 tous les objets de type voiture. On affecte ensuite une valeur \'e0 cette propri\'e9t\'e9 pour l'objet voiture1.\par
+\par
+Voiture.prototype.couleur = null;\par
+voiture1.couleur = "noir";\par
+\b\i0\par
+Comment d\'e9finir une propri\'e9t\'e9 d\rquote un objet en JavaScript ?\par
+\b0\i D\'e9finir des propri\'e9t\'e9s pour un type d'objet\par
+On peut ajouter une propri\'e9t\'e9 \'e0 un type pr\'e9c\'e9demment d\'e9fini en utilisant la propri\'e9t\'e9 prototype . Cela permettra de d\'e9finir une propri\'e9t\'e9 qui sera partag\'e9e par tous les objets d'un m\'eame type plut\'f4t qu'elle ne soit d\'e9finie que pour un seul objet.\par
+\b\i0\par
+Comment supprimer une propri\'e9t\'e9 d\rquote un objet en JavaScript ?\par
+\b0\i La m\'e9thode Reflect. deleteProperty permet de supprimer une propri\'e9t\'e9 d'un objet. Elle renvoie un Boolean qui indique si la propri\'e9t\'e9 a \'e9t\'e9 supprim\'e9e correctement. Cette m\'e9thode est tr\'e8s proche de l'op\'e9rateur delete\b\i0\par
+\par
+quelle diff\'e9rence entre java et javascript ?\par
+\par
+\b0\i Java permet de cr\'e9er des applications qui sont ex\'e9cut\'e9es sur une machine ou un navigateur virtuel tandis que le code JavaScript est ex\'e9cut\'e9 uniquement sur un navigateur. Le code Java doit \'eatre compil\'e9 tandis que le code JavaScript est compos\'e9 enti\'e8rement de texte. Ils n\'e9cessitent des plug-ins diff\'e9rents.\b\i0\par
+}
+ 
