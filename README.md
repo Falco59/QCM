@@ -30,6 +30,10 @@ let maFonction = function(parametres) {
   // instructions
 }
 
+
+// Ok mais c'est du copié collé. 
+
+
 Comment appeler une fonction en JavaScript?
 Pour appeler une fonction en JavaScript, vous devez utiliser son nom suivi de parenthèses et éventuellement de arguments entre parenthèses : nomDeFonction(arguments);.
 
